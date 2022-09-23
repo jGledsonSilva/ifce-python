@@ -1,8 +1,6 @@
-n = int(input('Digite a quntidade de número da lista:'))
-
-lista=[int(input('Digite um número:')) for i in range(n)]
-
-#lista=[]
+string = str(input("Digite os números separados por virgulas: "))
+lista = string.split(',')
+lista = [int(i) for i in lista]
 
 def quicksort(lista):
     if(len(lista)>1):        
